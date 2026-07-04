@@ -1,0 +1,216 @@
+=========================================================================================
+            PROJECT DOCUMENTATION: GLOBAL MULTI ASSETS PORTFOLIO ANALYSIS PLATFORM
+=========================================================================================
+
+1. PROJECT OBJECTIVE & PROBLEM STATEMENT
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+The objective of this project is to develop an end-to-end Executive Portfolio Analytics platform that enables investment firms and portfolio managers to monitor and analyze diversified investment portfolios across Stocks and Cryptocurrencies.
+
+The organization manages multiple investors with different risk profiles and investment preferences. Senior management requires a centralized Business Intelligence solution to evaluate portfolio performance, identify high-performing assets, monitor investment trends, analyze investor behavior, and assess portfolio risk for strategic investment decisions.
+
+The dashboard provides actionable insights by consolidating portfolio transactions, market performance, investor information, and asset classifications into a single interactive Power BI reporting platform.
+
+The project answers critical business questions across six analytical areas:
+
+Page 1: Executive Portfolio Overview & Investment Summary
+
+Page 2: Stock Market Performance & Sector Analysis
+
+Page 3: Cryptocurrency Performance & Portfolio Allocation
+
+Page 4: Portfolio Performance, Asset Allocation & Investment Distribution
+
+Page 5: Investor Behavior, Investment Trends & Risk Segmentation
+
+Page 6: Portfolio Risk Profile & Investor Risk Analysis
+
+
+2. KEY PERFORMANCE INDICATORS (KPIs) & BUSINESS LOGIC
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To evaluate portfolio performance and investment activity, the dashboard implements the following analytical KPIs using DAX.
+
+* Total Portfolio Value
+
+Formula =
+SUM(Quantity × Purchase Price)
+
+Business Purpose:
+Measures the total monetary value invested across all assets.
+
+------------------------------------------------------------
+
+* Total Investment
+
+Formula =
+Sum of all investment transactions
+
+Business Purpose:
+Tracks total invested capital across the portfolio.
+
+------------------------------------------------------------
+
+* Total Investors
+
+Formula =
+Distinct Count of InvestorID
+
+Business Purpose:
+Measures active investor participation.
+
+------------------------------------------------------------
+
+* Average Investment per Investor
+
+Formula =
+Total Portfolio Value ÷ Total Investors
+
+Business Purpose:
+Evaluates average investor contribution.
+
+------------------------------------------------------------
+
+* Total Transactions
+
+Formula =
+Count of Investment Transactions
+
+Business Purpose:
+Measures overall trading activity.
+
+------------------------------------------------------------
+
+* Average Brokerage
+
+Formula =
+Average(Brokerage)
+
+Business Purpose:
+Measures average transaction cost incurred during trading.
+
+------------------------------------------------------------
+
+* Asset Allocation %
+
+Formula =
+Investment Value by Asset Type ÷ Total Portfolio Value
+
+Business Purpose:
+Analyzes capital allocation between Stocks and Cryptocurrencies.
+
+------------------------------------------------------------
+
+* Buy vs Sell Investment
+
+Formula =
+Investment Value grouped by Buy/Sell Transaction Type
+
+Business Purpose:
+Monitors investment behavior and market participation.
+
+------------------------------------------------------------
+
+* Investment by Risk Profile
+
+Formula =
+Investment Value grouped by Investor Risk Profile
+
+Business Purpose:
+Evaluates capital distribution across Conservative, Moderate, and Aggressive investors.
+
+
+3. DATA DICTIONARY (CRITICAL METRICS EXPLAINED)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The database consists of multiple transactional and dimensional tables supporting portfolio analytics.
+
+AssetID
+Unique identifier assigned to each financial asset.
+
+AssetName
+Name of the investment instrument (Stock or Cryptocurrency).
+
+AssetType
+Classifies the asset as Stock or Cryptocurrency.
+
+Sector
+Business sector associated with the stock asset.
+
+InvestorID
+Unique identifier assigned to each investor.
+
+InvestorName
+Registered investor name.
+
+RiskProfile
+Investor risk classification:
+• Conservative
+• Moderate
+• Aggressive
+
+TransactionID
+Unique identifier for every investment transaction.
+
+BuySell
+Indicates whether the transaction represents a Buy or Sell operation.
+
+Quantity
+Number of units traded.
+
+Price
+Transaction execution price per unit.
+
+Brokerage
+Brokerage fee charged for the transaction.
+
+Open
+Opening market price.
+
+High
+Highest trading price.
+
+Low
+Lowest trading price.
+
+Close
+Closing market price.
+
+Volume
+Total traded volume for the asset.
+
+Date
+Transaction or market trading date.
+
+
+4. ARCHITECTURE & TARGET AUDIENCE
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Model:
+Star Schema
+
+Fact Tables
+
+• Fact_Stocks
+• Dim_Transactions
+
+Dimension Tables
+
+• Dim_Assets
+• Dim_Investors
+• Dim_Date
+
+Target Audience
+
+• Chief Investment Officer (CIO)
+
+• Portfolio Managers
+
+• Investment Analysts
+
+• Wealth Management Advisors
+
+• Financial Research Teams
+
+• Retail & Institutional Investors
+
+=========================================================================================
