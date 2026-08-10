@@ -353,20 +353,18 @@ Global Multi Assets Portfolio Analysis Platform.pbix
 
 # Author
 
-**Vipul Paighan**
+**Sahil Misar**
 
-Email: **vipul.paighan.in@gmail.com**
+Email: **sahilmisar7@gmail.com**
 
-GitHub: https://github.com/vipulsystems
+GitHub: https://github.com/sahil983461
 
 ---
 
-# Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is intended for educational, portfolio, and demonstration purposes.
