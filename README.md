@@ -318,7 +318,7 @@ The project follows a **Star Schema**.
 1. Clone the repository
 
 ```
-git clone https://github.com/vipulsystems/global-multi-assets-portfolio-analysis-platform.git
+https://github.com/sahil983461/global-market-analysis-portfolio.gitS
 ```
 
 2. Open the Power BI report
